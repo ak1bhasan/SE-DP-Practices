@@ -2,7 +2,7 @@ class Item {
     String name;
     double price;
 
-    Item( String name, double price ) {
+    Item(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -19,7 +19,7 @@ class Order {
 
     void printBill() {
         double total = item1.price + item2.price;
-        System.out.println("Total Cost : " + total);
+        System.out.println("Total cost : " + total);
     }
 }
 
@@ -29,6 +29,8 @@ public class YouDo08 {
         Item keyboard = new Item("Keyboard", 45.0);
 
         Order order = new Order(mouse, keyboard);
+
         order.printBill();
     }
 }
+
